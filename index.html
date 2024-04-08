@@ -10,11 +10,13 @@
     <body>
     <aside>
         <ul>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfY-xxeYKWi32M0_fQ-MAYCL1FGdgcFz0UiBOMGwmTaKK58bA/viewform"><h2> الحضور و الغياب </h2></a></li>
+            <li id="hodor" onclick="frame()"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfY-xxeYKWi32M0_fQ-MAYCL1FGdgcFz0UiBOMGwmTaKK58bA/viewform"><h2> الحضور و الغياب </h2></a></li>
             <li><a href="https://forms.gle/oKda19YbxLgexVuJA"><h2>تحضير الدروس </h2> </li>
             <li><a href="https://docs.google.com/spreadsheets/d/1Cabvf7gMCQq7QF-NfIDifBcmonEQ8fza/edit?usp=drive_link&ouid=101717911472535962462&rtpof=true&sd=true"><h2> بيانات الطلبه </h2> </li>
         </ul>
     </aside>
+        <div class="heta">
+        </div>
     <style>
         body{
             padding:0px;
@@ -38,5 +40,16 @@
             text-decoration:none;
             color:white;
         }
+        heta{
+            margin-left:175;
         </style>
+        <script>
+            function frame(){
+            let iframe = document.createElement("iframe")
+            iframe.src = "https://docs.google.com/forms/d/e/1FAIpQLSfY-xxeYKWi32M0_fQ-MAYCL1FGdgcFz0UiBOMGwmTaKK58bA/viewform";
+            iframe.style.marginLeft = '175px';
+             document.getElementById('heta').appendChild(iframe);
+            }
+                
+        </script>
 
